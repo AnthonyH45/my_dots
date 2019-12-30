@@ -62,7 +62,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" C-t to make the cycle background transparency
+" C-t to make the background cycle between being tansparent or not
 let t:is_transparent = 0
 function! Toggle_transparent()
     if t:is_transparent == 0
