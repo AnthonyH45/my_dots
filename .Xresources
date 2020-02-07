@@ -50,7 +50,9 @@ URxvt.saveline: 2048
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 URxvt.urgentOnBell: true
-URxvt.depth: 24
+!! Commented out the following line bc it broke the images 
+!! shown in ranger sometimes
+!! URxvt.depth: 24
 URxvt.iso14755: false
 URxvt.transparent: true
 
