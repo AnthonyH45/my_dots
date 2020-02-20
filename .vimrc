@@ -11,8 +11,14 @@ Plug 'junegunn/vim-github-dashboard'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'
-Plug 'kooparse/vim-color-desert-night'
 Plug 'sheerun/vim-polyglot'
+Plug 'lervag/vimtex'
+Plug 'itchyny/lightline.vim'
+" Colors
+Plug 'artanikin/vim-synthwave84'
+Plug 'kooparse/vim-color-desert-night'
+Plug 'gilgigilgil/anderson.vim'
+Plug 'gruvbox-material/vim', {'as': 'gruvbox-material'}
 call plug#end()
 
 " Replace <YOURS> with your GitHub username and password/Personal-Access-Token
@@ -24,13 +30,26 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
 syntax on
+" set termguicolors
+set background=dark
 " for use in tty# when true color isnt available
-set t_Co=256
-colorscheme desert-night
+" set t_Co=256
+" colorscheme synthwave84
+" colorscheme anderson
+let g:gruvbox_material_background = 'medium'
+colorscheme gruvbox-material
+" colorscheme desert-night
+"
+" For lightline
+let g:lightline = {}
+let g:lightline.colorscheme = 'gruvbox_material'
+
+"
 
 filetype indent plugin on
 
@@ -62,7 +81,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" C-t to make the background cycle between being tansparent or not
+" C-t to make the cycle background transparency
 let t:is_transparent = 0
 function! Toggle_transparent()
     if t:is_transparent == 0

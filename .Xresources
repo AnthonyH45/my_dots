@@ -1,39 +1,70 @@
 ! special
-*.foreground:   #a2a2a2
-*.background:   #282828
-*.cursorColor:  #a2a2a2
+! *.foreground:   #a2a2a2
+! *.background:   #282828
+! *.cursorColor:  #a2a2a2
 
 ! black
-*.color0:       #555555
-*.color8:       #888888
+! *.color0:       #555555
+! *.color8:       #888888
 
 ! red
-*.color1:       #9c3528
-*.color9:       #d64937
+! *.color1:       #9c3528
+! *.color9:       #d64937
 
 ! green
-*.color2:       #61bc3b
-*.color10:      #86df5d
+! *.color2:       #61bc3b
+! *.color10:      #86df5d
 
 ! yellow
-*.color3:       #f3b43a
-*.color11:      #fdd75a
+! *.color3:       #f3b43a
+! *.color11:      #fdd75a
 
 ! blue
-*.color4:       #0d68a8
-*.color12:      #0f75bd
+! *.color4:       #0d68a8
+! *.color12:      #0f75bd
 
 ! magenta
-*.color5:       #744560
-*.color13:      #9e5e83
+! *.color5:       #744560
+! *.color13:      #9e5e83
 
 ! cyan
-*.color6:       #288e9c
-*.color14:      #37c3d6
+! *.color6:       #288e9c
+! *.color14:      #37c3d6
 
 ! white
-*.color7:       #a2a2a2
-*.color15:      #f9f9f9
+! *.color7:       #a2a2a2
+!*.color15:      #f9f9f9
+
+! Gruvbox colors
+! From https://github.com/morhetz/gruvbox-contrib/blob/master/xresources/gruvbox-dark.xresources
+! hard contrast: *background: #1d2021
+*background: #282828
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
 
 !! URxvt Appearance
 URxvt.font: xft:unifont:style=Regular:size=12

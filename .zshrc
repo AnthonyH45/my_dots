@@ -1,8 +1,11 @@
 # For a nice greeting message!
-fortune | cowsay | lolcat
+fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1) | lolcat
+
 export ZSH="~/.oh-my-zsh"
+export EDITOR="vim"
 
 ZSH_THEME="robbyrussell"
+COMPLETION_WAITING_DOTS="true"
 
 plugins=(git autojump)
 
@@ -27,7 +30,7 @@ alias cd..='cd ..'
 alias cd....='cd ../..'
 alias g+++='g++ -Wall -Wuninitialized -g'
 alias ram='egrep --color $mem /proc/meminfo'
-alias fcl='fortune | cowsay | lolcat'
+alias fcl='fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1) | lolcat'
 alias pip='pip3'
 alias docker='sudo docker'
 alias ghidra='~/tools/ghidra_9.1.1_PUBLIC/ghidraRun'
