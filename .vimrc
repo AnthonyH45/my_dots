@@ -8,18 +8,16 @@ endif
 call plug#begin()
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-github-dashboard'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
-Plug 'lervag/vimtex'
-Plug 'itchyny/lightline.vim'
+Plug 'vim/killersheep'
+"Plug 'govim/govim' "autocomplete is nice, but is a little more wonky than VScode
+Plug 'Yggdroot/indentLine'
 " Colors
-Plug 'artanikin/vim-synthwave84'
-Plug 'kooparse/vim-color-desert-night'
-Plug 'gilgigilgil/anderson.vim'
 Plug 'gruvbox-material/vim', {'as': 'gruvbox-material'}
+Plug 'morhetz/gruvbox'
 call plug#end()
+
 
 " Replace <YOURS> with your GitHub username and password/Personal-Access-Token
 let g:github_dashboard = { 'username': '<USER>', 'password': '<PASSWORD/PERSONAL-ACCESS-TOKEN>' }
@@ -34,7 +32,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
-syntax on
 " set termguicolors
 set background=dark
 " for use in tty# when true color isnt available
@@ -50,10 +47,9 @@ let g:lightline = {}
 let g:lightline.colorscheme = 'gruvbox_material'
 
 "
-
-filetype indent plugin on
-
 " Found these online, i forgot where i got them
+filetype indent plugin on
+syntax on
 set hidden
 set ai
 set mouse=a
