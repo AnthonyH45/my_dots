@@ -1,17 +1,14 @@
-# For a nice greeting message!
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
 fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1) | lolcat
 
-export ZSH="~/.oh-my-zsh"
 export EDITOR="vim"
+export PATH=$PATH:/home/zax/go/bin
+#stty -ixon
 
-ZSH_THEME="robbyrussell"
-COMPLETION_WAITING_DOTS="true"
-
-plugins=(git autojump)
-
-source $ZSH/oh-my-zsh.sh
-
-# some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -29,8 +26,7 @@ alias gpp='g++ -Wall -Werror -Wuninitialized -g *.cpp -o main'
 alias cd..='cd ..'
 alias cd....='cd ../..'
 alias g+++='g++ -Wall -Wuninitialized -g'
-alias ram='egrep --color $mem /proc/meminfo'
 alias fcl='fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1) | lolcat'
 alias pip='pip3'
 alias docker='sudo docker'
-alias ghidra='~/tools/ghidra_9.1.1_PUBLIC/ghidraRun'
+alias radeon-profile='sudo radeon-profile'
