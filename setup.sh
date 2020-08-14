@@ -4,7 +4,7 @@ printf 'This script makes a backup of existing .vimrc, .Xresources, .zshrc, '
 printf '\nIt then downloads the custom dotfiles I made'
 printf '\nPlease run from the home directory too!'
 printf '\nYou must have wget and git installed, this script also install vim, zsh, zsh-prezto, gdb, gdb-ped'
-printf '\nThis script also assumes you have a debian system, please change the "apts" and what not\n to your distro specific installation cmds'
+printf '\nThis script also assumes you have a debian system, please change the "apts" and what not\nto your distro specific installation cmds'
 printf '\nPress [ENTER] to continue . . .'
 read _
 
