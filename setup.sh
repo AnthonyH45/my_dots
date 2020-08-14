@@ -38,6 +38,7 @@ fi
 
 wget https://raw.githubusercontent.com/AnthonyH45/my_dots/master/.vimrc
 wget https://raw.githubusercontent.com/AnthonyH45/my_dots/master/.zshrc
+wget https://raw.githubusercontent.com/AnthonyH45/my_dots/master/.zpreztorc
 wget https://raw.githubusercontent.com/AnthonyH45/my_dots/master/.Xresources
 
 mv .vimrc ~/
