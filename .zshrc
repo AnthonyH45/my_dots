@@ -6,8 +6,6 @@ fi
 fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1) | lolcat
 
 export EDITOR="vim"
-export PATH=$PATH:/home/zax/go/bin
-#stty -ixon
 
 alias ll='ls -alF'
 alias la='ls -A'
