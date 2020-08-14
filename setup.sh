@@ -14,6 +14,7 @@ clear
 # vim
 sudo apt-get install vim -y
 sudo apt-get install zsh && zsh -c 'git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto" '
+chsh -s /bin/zsh
 sudo apt-get install gdb && git clone https://github.com/longld/peda.git ~/peda && echo "source ~/peda/peda.py" >> ~/.gdbinit
 
 # check if a file exists, then back it up
