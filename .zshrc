@@ -78,6 +78,13 @@ alias ..3='cd ../../..'
 alias ..4='cd ../../../..'
 alias ..5='cd ../../../../..'
 
+# get error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
+# shutdown or reboot
+alias ssn="sudo shutdown now"
+alias sr="sudo reboot"
+
 # confirm before overwriting something
 alias cp="cp -i"
 alias mv='mv -i'
