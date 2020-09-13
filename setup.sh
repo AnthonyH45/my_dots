@@ -11,12 +11,12 @@ read _
 clear
 
 # install vim,zsh,zsh-prezto, gdb, gdb-peda
-# vim
+sudo apt-get install git -y
 sudo apt-get install vim -y
-sudo apt-get install zsh && zsh -c 'git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto" '
+sudo apt-get install zsh -y && zsh -c 'git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto" '
 chsh -s /bin/zsh
-sudo apt-get install fortune lolcat cowsay neofetch
-sudo apt-get install gdb && git clone https://github.com/longld/peda.git ~/peda && echo "source ~/peda/peda.py" >> ~/.gdbinit
+sudo apt-get install -y fortune lolcat cowsay neofetch
+sudo apt-get install -y gdb && git clone https://github.com/longld/peda.git ~/peda && echo "source ~/peda/peda.py" >> ~/.gdbinit
 
 # check if a file exists, then back it up
 # then download the new dot file
