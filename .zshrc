@@ -30,6 +30,9 @@ alias docker='sudo docker'
 alias radeon-profile='sudo radeon-profile'
 alias sane='stty sane'
 
+# update all repos in current directory
+# if no git repo, it just prints "no git repo" in red
+alias uar='for i in `ls`; cd ${i} && ( ([ -d .git ] && git pull) || echo -e "\033[0;31m no git repo\033[0m" ) && cd ..'
 # git stuff, inspired by https://gitlab.com/dwt1/dotfiles/-/blob/master/.bashrc
 alias ga='git add'
 alias gaa='git add .'
