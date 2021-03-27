@@ -45,3 +45,4 @@ wget https://raw.githubusercontent.com/AnthonyH45/my_dots/master/.Xresources
 mv .vimrc ~/
 mv .zshrc ~/
 mv .Xresources ~/
+mv .zpreztorc ~/
